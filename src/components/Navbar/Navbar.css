@@ -16,7 +16,7 @@ html{
 }
 
 .navbar .logo{
-    width: 150px;
+    width: 140px;
 }
 
 .navbar-menu{
@@ -25,6 +25,18 @@ html{
     gap: 20px;
     color: rgb(66, 65, 66);
     font-size: 18px;
+}
+
+.hamburger{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .navbar-right{
@@ -110,8 +122,25 @@ html{
     }
 }
 
+/* show hamburger on small screen*/
 @media (max-width:750px) {
     .navbar-menu{
         display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 8px;    
+    }
+
+    .navbar-menu.active{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
     }
 }

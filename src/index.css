@@ -13,6 +13,11 @@ body{
   min-height: 100vh;
 }
 
+body.modal-open{
+    overflow: hidden;
+}
+
+
 a{
   text-decoration: none;
   color: inherit;
@@ -23,3 +28,8 @@ a{
   margin: auto;
 }
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
