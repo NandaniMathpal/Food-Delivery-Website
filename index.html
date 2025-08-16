@@ -2,13 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Food-Delivery-Website/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery</title>
-    <script type="module" crossorigin src="/Food-Delivery-Website/assets/index-D9oMH1ap.js"></script>
-    <link rel="stylesheet" crossorigin href="/Food-Delivery-Website/assets/index-BZP_I-7v.css">
+    <script type="module" crossorigin src="/assets/index-CA_1oD3W.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BxFtrNAC.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
+
+    <script type="text/javascript">
+    (function (l) {
+      if (l.search.startsWith("/")) {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
   </body>
 </html>
