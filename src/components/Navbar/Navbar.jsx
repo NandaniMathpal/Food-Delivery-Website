@@ -17,7 +17,7 @@ const Navbar = ({setShowLogin}) => {
   return (
     <div className='navbar'>
       <div className="navbar-left">
-        {/* <Link to='/'><img className='logo' src={assets.logo} alt="" /></Link> */}
+      
         <div className="hamburger" onClick={() => setIsMobileMenuOpen(prev => !prev)}>
           &#9776;
         </div>
